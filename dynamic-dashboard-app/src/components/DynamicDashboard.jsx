@@ -28,13 +28,9 @@ function DynamicDashboard() {
         textAlign: "center",
         marginTop: "10px",
         fontFamily: "Arial, sans-serif",
-        backgroundColor: "#f7f9fb",
+        backgroundColor: "#ccdbeaff",
         padding: "30px",
-        borderRadius: "30px",
-        width: "60%",
-        marginLeft: "auto",
-        marginRight: "auto",
-        boxShadow: "0 4px 10px rgba(39, 10, 10, 0.1)",
+        
       }}
     >
       {/* Date Display */}
@@ -73,8 +69,8 @@ function DynamicDashboard() {
 
       {/* Task Counts */}
       <div style={{ marginTop: "15px", fontWeight: "bold" }}>
-        <p>Completed Tasks: {completedCount}</p>
-        <p>Incomplete Tasks: {incompleteCount}</p>
+        <p style={{color : "green"}}>Completed Tasks: {completedCount}</p>
+        <p  style={{color : "red"}}>Incomplete Tasks: {incompleteCount}</p>
       </div>
     </div>
   );
